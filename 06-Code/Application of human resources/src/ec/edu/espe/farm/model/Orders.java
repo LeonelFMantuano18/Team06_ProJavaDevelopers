@@ -9,16 +9,21 @@ public class Orders {
     String expenses;
     
     
- public static void main(String [] args) {   
+public static void main(String [] args) {   
+    Orders.order1 = new Orders();
+
+        order1.day = 17;
+
+        System.out.printIn("the day of order is : "+order1.day);
      
- }   
-
- public static void totalmoney() {
-}
-
 public boolean transfers() {
-    return false;
+    if (n+1 == 2) {
+        return true;
+    } else {
+        return false:
+    }
    
 }
 
+}
 }
