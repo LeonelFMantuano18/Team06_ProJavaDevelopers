@@ -8,9 +8,7 @@ package ec.edu.espe.model;
  *
  * @author USER
  */
-public class Profile {
-    String name;
-    int id;
-    String area_Work;
-    int password;
+public class PaymentRole {
+    int salary;
+    int debts;
 }
