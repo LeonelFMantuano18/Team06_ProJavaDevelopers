@@ -7,7 +7,7 @@ public class Payment {
     private int hoursworked;
     private String workerposition;
     private int moneytopay;
-      
+
     public boolean CheckIfisDateOfPayment(){
                
     return false;
