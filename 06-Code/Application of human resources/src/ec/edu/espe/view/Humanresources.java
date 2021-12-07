@@ -9,10 +9,12 @@ import  ec.edu.espe.model.Employee;
 import  ec.edu.espe.model.Payment;
 import  ec.edu.espe.model.Transportation;
 import  ec.edu.espe.model.Employee;
+import ec.edu.espe.model.Payrole;
+import ec.edu.espe.model.Profile;
 
 /**
  *
- * @author MateoMaldonado
+ * @author MateoMaldonado, AnthonyMorales, DiegoPalacios
  */
 public class Humanresources {
     
@@ -29,9 +31,17 @@ public class Humanresources {
     
     boolean the_job_includes_transportaion=true;
     int how_many_workers_have_a_car = 0;
-    
+       
     String how_long_you_have_working="";
     String how_long_before_retirement="";
+    
+    String name= "";
+    int id=0;
+    String area_Work="";
+    int password=0;
+    
+    int salary=0;
+    int debts=0;
     
     Payment payment1 = new Payment (paydate, hoursworked, workerposition, moneytopay);
         System.out.println(payment1);
@@ -44,5 +54,12 @@ public class Humanresources {
         
     Employee employee1 = new Employee(how_long_you_have_working, how_long_before_retirement);
         System.out.println(employee1);
+    
+    Profile profile1 = new Profile(name, id, area_Work, password );  
+        System.out.println(profile1);
+        
+    Payrole payrole1 = new Payrole(salary, debts);
+        System.out.println(payrole1);    
+        
     }
 }   
