@@ -6,7 +6,9 @@ import java.util.Scanner;
 import  ec.edu.espe.model.Workers;
 import  ec.edu.espe.model.Orders;
 import  ec.edu.espe.model.Employee;
-import ec.edu.espe.model.Payment;
+import  ec.edu.espe.model.Payment;
+import  ec.edu.espe.model.Transportation;
+import  ec.edu.espe.model.Employee;
 
 /**
  *
@@ -25,10 +27,22 @@ public class Humanresources {
     int moneyEarned=0;
     String location="";
     
+    boolean the_job_includes_transportaion=true;
+    int how_many_workers_have_a_car = 0;
+    
+    String how_long_you_have_working="";
+    String how_long_before_retirement="";
+    
     Payment payment1 = new Payment (paydate, hoursworked, workerposition, moneytopay);
         System.out.println(payment1);
     
     Company company1 = new Company(hoursOfAttention, moneyEarned, location);
         System.out.println(company1);
+    
+    Transportation transportation1 = new Transportation (the_job_includes_transportaion, how_many_workers_have_a_car);
+        System.out.println(transportation1);
+        
+    Employee employee1 = new Employee(how_long_you_have_working, how_long_before_retirement);
+        System.out.println(employee1);
     }
-}
+}   
