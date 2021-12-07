@@ -1,5 +1,5 @@
 
-package ec.edu.espe;
+package ec.edu.espe.model;
 
 public class Employee {
     private String how_long_you_have_working;
@@ -9,6 +9,10 @@ public class Employee {
         Employee employee1 = new Employee();
         
     
+    }
+
+    private Employee() {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
     public void Checkthetimeinthecompany (){
         

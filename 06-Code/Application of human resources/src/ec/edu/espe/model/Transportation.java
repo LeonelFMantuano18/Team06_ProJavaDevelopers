@@ -1,4 +1,4 @@
-package ec.edu.espe;
+package ec.edu.espe.model;
 
 public class Transportation {
     private Boolean the_job_includes_transportation;
@@ -8,6 +8,10 @@ public class Transportation {
         Transportation transportation1 = new Transportation();
     
     
+    }
+
+    private Transportation() {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
     public boolean CheckforTransport(){
     

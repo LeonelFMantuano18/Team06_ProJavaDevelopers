@@ -1,5 +1,5 @@
 
-package ec.edu.espe.farm.model;
+package ec.edu.espe.model;
 
 public class Company {
         

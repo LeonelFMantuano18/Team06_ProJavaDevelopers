@@ -1,9 +1,9 @@
 
-package ec.edu.espe.farm.model;
+package ec.edu.espe.model;
 
 
 public class Workers {
-    public class Workers{
+    private static Workers workers1;
     //Atributos
     
     String name;
@@ -20,16 +20,17 @@ public class Workers {
         workers1.gender = "Men";
         workers1.age = 17;
 
-        System.out.printIn("the name of workers1 is : "+workers1.name);
-        System.out.printIn("the Id of workers1 is : "+workers1.Id); 
-        System.out.printIn("the gender of workers1 is : "+workers1.gender);
-        System.out.printIn("the age of workers1 is : "+workers1.age);
+        System.out.println("the name of workers1 is : "+workers1.name);
+        System.out.println("the Id of workers1 is : "+workers1.Id); 
+        System.out.println("the gender of workers1 is : "+workers1.gender);
+        System.out.println("the age of workers1 is : "+workers1.age);
 
 
 
        
     
     }
+        private int age;
     
     }  
-}
+
