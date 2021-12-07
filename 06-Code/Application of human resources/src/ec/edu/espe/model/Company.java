@@ -1,17 +1,27 @@
 
-package ec.edu.espe.farm.model;
+package ec.edu.espe.model;
 
 public class Company {
         
     private int hoursOfAttention;
     private int moneyEarned;
     private String location;
+
+    public Company() {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
     
     public void MoneyEarnedInTheLastMonth(){
              
     }
     public void ExpensesInTheLastMonth(){
         
+    }
+
+    public Company(int hoursOfAttention, int moneyEarned, String location) {
+        this.hoursOfAttention = hoursOfAttention;
+        this.moneyEarned = moneyEarned;
+        this.location = location;
     }
 
     @Override

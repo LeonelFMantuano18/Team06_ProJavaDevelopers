@@ -1,5 +1,5 @@
 
-package ec.edu.espe.farm.model;
+package ec.edu.espe.model;
 
 public class Payment {
 
@@ -7,6 +7,13 @@ public class Payment {
     private int hoursworked;
     private String workerposition;
     private int moneytopay;
+    
+    public Payment(boolean paydate, int hoursworked, String workerposition, int moneytopay) {
+        this.paydate = paydate;
+        this.hoursworked = hoursworked;
+        this.workerposition = workerposition;
+        this.moneytopay = moneytopay;
+    }
 
     public boolean CheckIfisDateOfPayment(){
                
