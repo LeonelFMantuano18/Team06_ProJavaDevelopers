@@ -3,7 +3,7 @@ package ec.edu.espe.model;
 
 
 public class Workers {
-    private static Workers workers1;
+  /*  private static Workers workers1;
     //Atributos
     
     String name;
@@ -31,6 +31,6 @@ public class Workers {
     
     }
         private int age;
-    
+    */
     }  
 
