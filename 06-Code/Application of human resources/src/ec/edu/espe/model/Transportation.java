@@ -1,13 +1,14 @@
 package ec.edu.espe.model;
 
+import java.util.ArrayList;
+
 public class Transportation {
     private Boolean the_job_includes_transportation;
     private int how_many_workers_have_a_car;
+    private ArrayList<Transportation> transportations;
     
     public static void main(String[] args) {
         Transportation transportation1 = new Transportation();
-    
-    
     }
 
     private Transportation() {
