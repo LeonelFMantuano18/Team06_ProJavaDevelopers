@@ -2,15 +2,15 @@
 package ec.edu.espe.model;
 
 
-public class Orders {
+public class Order {
 
-    private static Orders order1;
+    private static Order order1;
     
     int day;
     String revenues;
     String expenses;
 
-    public Orders(int day, String revenues, String expenses, boolean transfers) {
+    public Order(int day, String revenues, String expenses, boolean transfers) {
         this.day = day;
         this.revenues = revenues;
         this.expenses = expenses;
@@ -20,14 +20,14 @@ public class Orders {
     
     
 public static void main(String [] args) {  
-    Orders.order1 = new Orders();
+    Order.order1 = new Order();
 
         order1.day = 17;
 
         System.out.println("the day of order is : "+order1.day);
 }
 
-    private Orders() {
+    private Order() {
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
      

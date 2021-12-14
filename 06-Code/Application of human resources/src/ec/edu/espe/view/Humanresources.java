@@ -1,10 +1,10 @@
 
 package ec.edu.espe.view;
 
-import ec.edu.espe.model.Company;
+/*import ec.edu.espe.model.Company;
 import java.util.Scanner;
-import  ec.edu.espe.model.Workers;
-import  ec.edu.espe.model.Orders;
+import  ec.edu.espe.model.Worker;
+import  ec.edu.espe.model.Order;
 import  ec.edu.espe.model.Employee;
 import  ec.edu.espe.model.Payment;
 import  ec.edu.espe.model.Transportation;
@@ -16,7 +16,7 @@ import ec.edu.espe.model.Profile;
  *
  * @author MateoMaldonado, AnthonyMorales, DiegoPalacios
  */
-public class Humanresources {
+/*public class Humanresources {
     
     public static void main(String[] args) {
     
@@ -62,4 +62,47 @@ public class Humanresources {
         System.out.println("payrole1");    
         
     }
-}   
+} */  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -2,8 +2,8 @@
 package ec.edu.espe.model;
 
 
-public class Workers {
-  /*  private static Workers workers1;
+public class Worker {
+  /*  private static Worker workers1;
     //Atributos
     
     String name;
@@ -13,7 +13,7 @@ public class Workers {
     
     //Metodos
     public static void main(String [] args) {
-        Workers.workers1 = new Workers();
+        Worker.workers1 = new Worker();
 
         workers1.name = "L";
         workers1.Id = "1834985677";
