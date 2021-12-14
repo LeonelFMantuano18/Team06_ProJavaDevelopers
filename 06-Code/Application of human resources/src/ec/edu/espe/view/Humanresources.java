@@ -11,6 +11,7 @@ import  ec.edu.espe.model.Transportation;
 import  ec.edu.espe.model.Employee;
 import ec.edu.espe.model.Payrole;
 import ec.edu.espe.model.Profile;
+import java.util.ArrayList;
 
 /**
  *
@@ -42,8 +43,9 @@ public class Humanresources {
     
     int salary=0;
     int debts=0;
+        ArrayList<Profile> Profiles = new ArrayList<>();
     
-    Payment payment1 = new Payment (paydate, hoursworked, workerposition, moneytopay);
+    Payment payment1 = new Payment (paydate, hoursworked, workerposition, moneytopay, Profiles);
         System.out.println(payment1);
     
     Company company1 = new Company(hoursOfAttention, moneyEarned, location);
