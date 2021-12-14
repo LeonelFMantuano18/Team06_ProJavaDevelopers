@@ -11,6 +11,7 @@ import  ec.edu.espe.model.Transportation;
 import  ec.edu.espe.model.Employee;
 import ec.edu.espe.model.Payrole;
 import ec.edu.espe.model.Profile;
+import java.util.ArrayList;
 
 /**
  *
@@ -31,9 +32,11 @@ public class Humanresources {
     
     boolean the_job_includes_transportaion=true;
     int how_many_workers_have_a_car = 0;
+    ArrayList<Transportation> transportations = new ArrayList<>();
        
     String how_long_you_have_working="";
     String how_long_before_retirement="";
+    ArrayList<Employee> employees = new ArrayList<>();
     
     String name= "";
     int id=0;
