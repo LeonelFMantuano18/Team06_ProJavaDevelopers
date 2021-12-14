@@ -45,23 +45,28 @@ public class Humanresources {
     int debts=0;
         ArrayList<Profile> Profiles = new ArrayList<>();
     
+<<<<<<< HEAD
     Payment payment1 = new Payment (paydate, hoursworked, workerposition, moneytopay, Profiles);
         System.out.println(payment1);
+=======
+    Payment payment1 = new Payment (paydate, hoursworked, workerposition, moneytopay);
+        System.out.println("payment1");
+>>>>>>> ec71b7d650fc186b43aa47c404a25fc90d0c634e
     
     Company company1 = new Company(hoursOfAttention, moneyEarned, location);
-        System.out.println(company1);
+        System.out.println("company1");
     
     Transportation transportation1 = new Transportation (the_job_includes_transportaion, how_many_workers_have_a_car);
-        System.out.println(transportation1);
+        System.out.println("transportation1");
         
     Employee employee1 = new Employee(how_long_you_have_working, how_long_before_retirement);
-        System.out.println(employee1);
+        System.out.println("employee1");
     
     Profile profile1 = new Profile(name, id, area_Work, password );  
-        System.out.println(profile1);
+        System.out.println("profile1");
         
     Payrole payrole1 = new Payrole(salary, debts);
-        System.out.println(payrole1);    
+        System.out.println("payrole1");    
         
     }
 }   
