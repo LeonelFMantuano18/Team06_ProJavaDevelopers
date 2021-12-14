@@ -45,9 +45,15 @@ public class Humanresources {
     
     int salary=0;
     int debts=0;
+        ArrayList<Profile> Profiles = new ArrayList<>();
     
+<<<<<<< HEAD
+    Payment payment1 = new Payment (paydate, hoursworked, workerposition, moneytopay, Profiles);
+        System.out.println(payment1);
+=======
     Payment payment1 = new Payment (paydate, hoursworked, workerposition, moneytopay);
         System.out.println("payment1");
+>>>>>>> ec71b7d650fc186b43aa47c404a25fc90d0c634e
     
     Company company1 = new Company(hoursOfAttention, moneyEarned, location);
         System.out.println("company1");

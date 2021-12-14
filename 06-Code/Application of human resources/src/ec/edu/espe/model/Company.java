@@ -6,10 +6,6 @@ public class Company {
     private int hoursOfAttention;
     private int moneyEarned;
     private String location;
-
-    public Company() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
-    }
     
     public void MoneyEarnedInTheLastMonth(){
              

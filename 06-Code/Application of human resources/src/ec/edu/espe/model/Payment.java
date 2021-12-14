@@ -1,6 +1,8 @@
 
 package ec.edu.espe.model;
 
+import java.util.ArrayList;
+
 public class Payment {
 
     private boolean paydate;
@@ -8,11 +10,14 @@ public class Payment {
     private String workerposition;
     private int moneytopay;
     
-    public Payment(boolean paydate, int hoursworked, String workerposition, int moneytopay) {
+    private ArrayList<Profile> Profiles;
+
+    public Payment(boolean paydate, int hoursworked, String workerposition, int moneytopay, ArrayList<Profile> Profiles) {
         this.paydate = paydate;
         this.hoursworked = hoursworked;
         this.workerposition = workerposition;
         this.moneytopay = moneytopay;
+        this.Profiles = Profiles;
     }
 
     public boolean CheckIfisDateOfPayment(){
@@ -30,7 +35,7 @@ public class Payment {
     
     @Override
     public String toString(){
-        return "Payment{" + "paydate=" + paydate + ", hoursworked=" + hoursworked + ", workerposition=" + workerposition + ", moneytopay=" + moneytopay + '}';
+        return "Payment{" + "paydate=" + isPaydate() + ", hoursworked=" + getHoursworked() + ", workerposition=" + getWorkerposition() + ", moneytopay=" + getMoneytopay() + '}';
     }
 
 /**
@@ -87,5 +92,19 @@ public class Payment {
      */
     public void setMoneytopay(int moneytopay) {
         this.moneytopay = moneytopay;
+    }
+
+    /**
+     * @return the Profiles
+     */
+    public ArrayList<Profile> getProfiles() {
+        return Profiles;
+    }
+
+    /**
+     * @param Profiles the Profiles to set
+     */
+    public void setProfiles(ArrayList<Profile> Profiles) {
+        this.Profiles = Profiles;
     }
 }
