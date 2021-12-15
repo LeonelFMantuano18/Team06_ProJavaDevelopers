@@ -1,11 +1,7 @@
 
 package ec.edu.espe.view;
 
-/*import ec.edu.espe.model.Company;
-import java.util.Scanner;
-import  ec.edu.espe.model.Worker;
-import  ec.edu.espe.model.Order;
-import  ec.edu.espe.model.Employee;
+import ec.edu.espe.model.Company;
 import  ec.edu.espe.model.Payment;
 import  ec.edu.espe.model.Transportation;
 import  ec.edu.espe.model.Employee;
@@ -17,7 +13,7 @@ import java.util.ArrayList;
  *
  * @author MateoMaldonado, AnthonyMorales, DiegoPalacios
  */
-/*public class Humanresources {
+public class Humanresources {
     
     public static void main(String[] args) {
     
@@ -53,7 +49,6 @@ import java.util.ArrayList;
 
     Payment payment1 = new Payment (paydate, hoursworked, workerposition, moneytopay);
         System.out.println("payment1");
-
     
     Company company1 = new Company(hoursOfAttention, moneyEarned, location);
         System.out.println("company1");
@@ -71,7 +66,7 @@ import java.util.ArrayList;
         System.out.println("payrole1");    
         
     }
-} */  
+}   
 
 
 

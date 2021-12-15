@@ -20,6 +20,10 @@ public class Payment {
         this.Profiles = Profiles;
     }
 
+    public Payment(boolean paydate, int hoursworked, String workerposition, int moneytopay) {
+        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+    }
+
     public boolean CheckIfisDateOfPayment(){
                
     return false;
