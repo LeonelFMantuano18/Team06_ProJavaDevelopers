@@ -3,16 +3,16 @@ package ec.edu.espe.model;
 
 import java.util.ArrayList;
 
-public class Employee {
+public abstract class Employee {
     private String how_long_you_have_working;
     private String how_long_before_retirement;
     private ArrayList<Employee> employees;
     
     public static void main(String[] args) {
-        Employee employee1 = new Employee();
+        Employee employee1 = new Employee(15, 5){};
     }
 
-    private Employee() {
+    private Employee(int par, int par1) {
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
     public void Checkthetimeinthecompany (){

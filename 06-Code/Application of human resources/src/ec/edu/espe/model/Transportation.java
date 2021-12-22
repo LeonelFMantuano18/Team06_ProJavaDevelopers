@@ -2,13 +2,13 @@ package ec.edu.espe.model;
 
 import java.util.ArrayList;
 
-public class Transportation {
+public abstract class Transportation {
     private Boolean the_job_includes_transportation;
     private int how_many_workers_have_a_car;
     private ArrayList<Transportation> transportations;
     
     public static void main(String[] args) {
-        Transportation transportation1 = new Transportation();
+        Transportation transportation1 = new Transportation(true, 0){};
     }
 
     private Transportation() {
