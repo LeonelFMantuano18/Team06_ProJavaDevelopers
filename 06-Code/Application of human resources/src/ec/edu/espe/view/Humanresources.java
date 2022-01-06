@@ -44,8 +44,8 @@ public class Humanresources {
         ArrayList<Profile> Profiles = new ArrayList<>();
     
 
-    Payment payment1 = new Payment (paydate, hoursworked, workerposition, moneytopay, Profiles);
-        System.out.println(payment1);
+    /*Payment payment1 = new Payment (paydate, hoursworked, workerposition, moneytopay, Profiles);
+        //System.out.println(payment1);
 
     Payment payment1 = new Payment (paydate, hoursworked, workerposition, moneytopay);
         System.out.println("payment1");
@@ -63,8 +63,8 @@ public class Humanresources {
         System.out.println("profile1");
         
     Payrole payrole1 = new Payrole(salary, debts);
-        System.out.println("payrole1");    
-        
+        System.out.println("payrole1");
+        */    
     }
 }   
 
