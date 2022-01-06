@@ -1,11 +1,19 @@
 package ec.edu.espe.model;
-public class Profile {
+
+import java.util.ArrayList;
+
+public abstract class Profile {
 
     private String name;
     private int id;
     private String areawork;
     private int password;
-
+    private ArrayList<Profile> profile;
+    
+    public static void main(String[] args) {
+        Profile profile1 = new Profile("",0,"",0){};
+    }
+    
     @Override
     public String toString() {
         return "Profile{" + "name=" + name + ", id=" + id + ", areawork=" + areawork + ", password=" + password + '}';

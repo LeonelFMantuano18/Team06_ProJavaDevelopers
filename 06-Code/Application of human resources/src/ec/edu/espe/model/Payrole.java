@@ -1,9 +1,16 @@
 package ec.edu.espe.model;
 
-public class Payrole {
+import java.util.ArrayList;
+
+public abstract class Payrole {
 
     private int salary;
     private int debts;
+    private ArrayList<Profile> payrole1;
+    
+    public static void main(String[] args) {
+        Payrole payrole1 = new Payrole(0,0){};
+    }
 
     public Payrole(int salary, int debts) {
         this.salary = salary;
