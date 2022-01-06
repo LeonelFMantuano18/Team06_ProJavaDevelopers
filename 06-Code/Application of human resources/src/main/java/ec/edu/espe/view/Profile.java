@@ -8,6 +8,7 @@ package ec.edu.espe.view;
 import javax.swing.JOptionPane;
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 /*import com.mongodb.ConnectionString;
 import com.mongodb.MongoClientSettings;
 import com.mongodb.client.MongoClient;
@@ -16,6 +17,11 @@ import com.mongodb.client.MongoDatabase;*/
 
 =======
 >>>>>>> 439b47561930de9fb79e7847509e66aba19256e5
+=======
+
+=======
+>>>>>>> 119599a7253684127966ebbc57eca18afdc0af45
+>>>>>>> ce03a1bb3b03daf1b15e4b05c8ce72a6b749bf7d
 /**
  * 
  *
@@ -207,6 +213,7 @@ public class Profile extends javax.swing.JFrame {
     // End of variables declaration//GEN-END:variables
 <<<<<<< HEAD
 
+<<<<<<< HEAD
     public class DB {
     
 
@@ -226,4 +233,9 @@ MongoDatabase database = mongoClient.getDatabase("Project");*/
 =======
  
 >>>>>>> 439b47561930de9fb79e7847509e66aba19256e5
+=======
+=======
+ 
+>>>>>>> 119599a7253684127966ebbc57eca18afdc0af45
+>>>>>>> ce03a1bb3b03daf1b15e4b05c8ce72a6b749bf7d
 }
