@@ -43,7 +43,6 @@ public abstract class Employee {
 
     
     
-    
     public abstract double gross_salary ();
     public abstract int overtime ();
     public abstract double net_salary ();

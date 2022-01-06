@@ -9,10 +9,7 @@ import ec.edu.espe.model.Payrole;
 import ec.edu.espe.model.Profile;
 import java.util.ArrayList;
 
-/**
- *
- * @author MateoMaldonado, AnthonyMorales, DiegoPalacios
- */
+
 public class Humanresources {
     
     public static void main(String[] args) {
@@ -56,7 +53,22 @@ public class Humanresources {
     Transportation transportation1 = new Transportation (the_job_includes_transportaion, how_many_workers_have_a_car);
         System.out.println("transportation1");
         
-    Employee employee1 = new Employee(how_long_you_have_working, how_long_before_retirement);
+    Employee employee1 = new Employee(how_long_you_have_working, how_long_before_retirement) {
+        @Override
+        public double gross_salary() {
+            throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        }
+
+        @Override
+        public int overtime() {
+            throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        }
+
+        @Override
+        public double net_salary() {
+            throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        }
+    };
         System.out.println("employee1");
     
     Profile profile1 = new Profile(name, id, area_Work, password );  
@@ -67,46 +79,3 @@ public class Humanresources {
         */    
     }
 }   
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

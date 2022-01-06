@@ -1,7 +1,7 @@
-
 package ec.edu.espe.model;
 
-public class Company {
+public class Company extends Worker{
+    
         
     private int hoursOfAttention;
     private int moneyEarned;
@@ -14,11 +14,15 @@ public class Company {
         
     }
 
-    public Company(int hoursOfAttention, int moneyEarned, String location) {
+    public Company(int hoursOfAttention, int moneyEarned, String location, String name, String Id, String gender, int age) {
+        super(name, Id, gender, age);
         this.hoursOfAttention = hoursOfAttention;
         this.moneyEarned = moneyEarned;
         this.location = location;
-    }
+    }    
+
+    
+    
 
     @Override
     public String toString(){
