@@ -32,15 +32,5 @@ public class ConnectionDB {
     }
 
 }
-
-    /*dataUpload.put("id", Integer.parseInt(txtId.getText()));
-    dataUpload.put("name", txtName.getText());
-    dataUpload.put("hobby", txtHobby.getSelectedItem().toString());
-    dataUpload.put("cellphone", txtCellPhone.getText());
-    dataUpload.put("sex", txtMasculine.getUIClassID());
-    dataUpload.put("group", txtGroup.getSelectedItem().toString());
-    dataUpload.put("salary", Float.parseFloat(txtSalary.getText()));
-    dataUpload.put("birthdate", txtBirthdate.getDate().toString());
-    dataUpload.put("comments", txtComments.getText());*/
     
 }
