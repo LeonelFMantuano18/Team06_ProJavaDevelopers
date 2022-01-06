@@ -2,23 +2,23 @@ package ec.edu.espe.model;
 
 public abstract class Employee {
     private String name;
-    private String Last_Name;
+    private String lastName;
     private String id;
     
-    private int hours_worked;
-    private int hourly_pay;
+    private int hoursWorked;
+    private int hourlyPay;
     
     public Employee(){
         
         
     }
 
-    public Employee(String name, String Last_Name, String id, int hours_worked, int hourly_pay) {
+    public Employee(String name, String lastName, String id, int hoursWorked, int hourlyPay) {
         this.name = name;
-        this.Last_Name = Last_Name;
+        this.lastName = lastName;
         this.id = id;
-        this.hours_worked = hours_worked;
-        this.hourly_pay = hourly_pay;
+        this.hoursWorked = hoursWorked;
+        this.hourlyPay = hourlyPay;
     }
 
     public String getName() {
@@ -26,7 +26,7 @@ public abstract class Employee {
     }
 
     public String getLast_Name() {
-        return Last_Name;
+        return lastName;
     }
 
     public String getId() {
@@ -34,11 +34,11 @@ public abstract class Employee {
     }
 
     public int getHours_worked() {
-        return hours_worked;
+        return hoursWorked;
     }
 
     public int getHourly_pay() {
-        return hourly_pay;
+        return hourlyPay;
     }
 
     
@@ -52,19 +52,19 @@ public abstract class Employee {
         this.name = name;
     }
 
-    public void setLast_Name(String Last_Name) {
-        this.Last_Name = Last_Name;
+    public void setLast_Name(String lastName) {
+        this.lastName = lastName;
     }
 
     public void setId(String id) {
         this.id = id;
     }
 
-    public void setHours_worked(int hours_worked) {
-        this.hours_worked = hours_worked;
+    public void setHours_worked(int hoursWorked) {
+        this.hoursWorked = hoursWorked;
     }
 
-    public void setHourly_pay(int hourly_pay) {
-        this.hourly_pay = hourly_pay;
+    public void setHourly_pay(int hourlyPay) {
+        this.hourlyPay = hourlyPay;
     }
 } 

@@ -24,5 +24,4 @@ MongoDatabase database = mongoClient.getDatabase("Project");
     public MongoDatabase obtenerDB(){
         return database;
     }
-
 }
