@@ -78,3 +78,50 @@ public class Company {
         this.location = location;
     }
 }
+
+/*ArrayList<company> company = new ArrayList<>();
+        
+        System.out.println(" Mateo Maldonado ");
+        System.out.println("What do you want to do? -> Open Menu : Yes(1) / No (0)");
+        firstOption = scanner.nextInt();
+        while (firstOption == 1) {
+            System.out.println("Company information");
+            secondOption = scanner.nextInt();
+
+            if (secondOption == 1) {
+                System.out.println("--> Enter data of company<-- ");
+
+                System.out.println("Name --> ");
+                name = scanner.next();
+
+                System.out.println("Owner --> ");
+                Owner = scanner.next();
+
+                System.out.println("attention --> ");
+                attention = scanner.nextInt();
+
+                System.out.println("Molting --> ");
+                molting = scanner.nextBoolean();
+
+                company = new any(name, owner, attention, molting);
+                company.add(company);
+                
+                System.out.println("\n");
+                
+            }
+            if (secondOption == 2) {
+                System.out.println("Enter the Id of the pany you want to remove:");
+                name = scanner.next();
+                company.remove(name);
+                System.out.println("company has benn removed"));
+                System.out.println("\n");
+            }
+            if (secondOption == 3) {
+                System.out.println("total companys ");
+                System.out.println("comany -> " + total.companys);
+                System.out.println("\n");
+            }
+            
+            }
+            if (secondOption == 5) {
+                break;*/
