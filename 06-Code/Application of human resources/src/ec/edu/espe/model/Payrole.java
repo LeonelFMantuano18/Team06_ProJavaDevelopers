@@ -1,5 +1,22 @@
 package ec.edu.espe.model;
 
+<<<<<<< HEAD
+import java.util.ArrayList;
+
+public abstract class Payrole {
+
+    private int salary;
+    private int debts;
+    private ArrayList<Profile> payrole1;
+    
+    public static void main(String[] args) {
+        Payrole payrole1 = new Payrole(0,0){};
+    }
+
+    public Payrole(int salary, int debts) {
+        this.salary = salary;
+        this.debts = debts;
+=======
 public class Payrole extends Employee{
     
     //atributos
@@ -8,6 +25,7 @@ public class Payrole extends Employee{
     
     public Payrole (){
         
+>>>>>>> bc6d4439e0353351b083414cc1f87d0c0cd2e962
     }
 
     public Payrole(String name, String Last_Name, String id, int hours_worked, int hourly_pay, int number_of_children) {

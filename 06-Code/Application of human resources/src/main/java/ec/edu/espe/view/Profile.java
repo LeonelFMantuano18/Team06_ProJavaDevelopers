@@ -7,7 +7,10 @@ package ec.edu.espe.view;
 
 import javax.swing.JOptionPane;
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> 119599a7253684127966ebbc57eca18afdc0af45
 /**
  *
  * @author USER
@@ -124,8 +127,8 @@ public class Profile extends javax.swing.JFrame {
 
     
     private void Btl_enterActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Btl_enterActionPerformed
-        Register profile = new Register();
-        profile.setVisible(true);
+        Profile register = new Profile();
+        register.setVisible(true);
         this.setVisible(false);
     }//GEN-LAST:event_Btl_enterActionPerformed
 
@@ -196,5 +199,9 @@ public class Profile extends javax.swing.JFrame {
     private javax.swing.JPasswordField txt_pass;
     private javax.swing.JTextField txt_user;
     // End of variables declaration//GEN-END:variables
+<<<<<<< HEAD
 
+=======
+ 
+>>>>>>> 119599a7253684127966ebbc57eca18afdc0af45
 }
