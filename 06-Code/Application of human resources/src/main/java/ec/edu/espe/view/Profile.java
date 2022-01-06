@@ -7,12 +7,6 @@ package ec.edu.espe.view;
 
 import javax.swing.JOptionPane;
 
-import com.mongodb.ConnectionString;
-import com.mongodb.MongoClientSettings;
-import com.mongodb.client.MongoClient;
-import com.mongodb.client.MongoClients;
-import com.mongodb.client.MongoDatabase;
-
 /**
  *
  * @author USER
@@ -129,8 +123,8 @@ public class Profile extends javax.swing.JFrame {
 
     
     private void Btl_enterActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Btl_enterActionPerformed
-        Register profile = new Register();
-        profile.setVisible(true);
+        Profile register = new Profile();
+        register.setVisible(true);
         this.setVisible(false);
     }//GEN-LAST:event_Btl_enterActionPerformed
 
@@ -201,21 +195,5 @@ public class Profile extends javax.swing.JFrame {
     private javax.swing.JPasswordField txt_pass;
     private javax.swing.JTextField txt_user;
     // End of variables declaration//GEN-END:variables
-
-    public class DB {
-    
-
-ConnectionString connectionString = new ConnectionString("");
-MongoClientSettings settings = MongoClientSettings.builder()
-        .applyConnectionString(connectionString)
-        .build();
-MongoClient mongoClient = MongoClients.create(settings);
-MongoDatabase database = mongoClient.getDatabase("Project");
-
-    
-    public MongoDatabase obtenerDB(){
-        return database;
-    }
-
-}
+ 
 }
