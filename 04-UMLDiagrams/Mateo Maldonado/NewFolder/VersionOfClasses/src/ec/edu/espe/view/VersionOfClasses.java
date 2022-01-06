@@ -48,11 +48,6 @@ public class VersionOfClasses {
     /*Payment payment1 = new Payment (paydate, hoursworked, workerposition, moneytopay, Profiles);
         System.out.println(payment1);
 
-    Payment payment1 = new Payment (paydate, hoursworked, workerposition, moneytopay);
-        System.out.println("payment1");
-    
-    Company company1 = new Company(hoursOfAttention, moneyEarned, location);
-        System.out.println("company1");
     
     Transportation transportation1 = new Transportation (the_job_includes_transportaion, how_many_workers_have_a_car);
         System.out.println("transportation1");*/
