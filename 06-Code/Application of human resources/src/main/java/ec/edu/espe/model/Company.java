@@ -21,6 +21,9 @@ public class Company extends Worker{
         this.location = location;
     }    
 
+    
+    
+
     @Override
     public String toString(){
         return "Company{" + "hoursOfAttention=" + hoursOfAttention + ", moneyEarned=" + moneyEarned + ", location=" + location + '}';
