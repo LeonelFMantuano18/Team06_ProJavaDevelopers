@@ -1,51 +1,80 @@
 package ec.edu.espe.model;
 
-/**
- *
- * @author Maisincho Richar 
- */
-public class Invoice {
-
-    //atributos
-    @Override
-    public String toString() {
-        return "Invoice{" + "customer=" + customer + ", datecustomer=" + datecustomer + ", date=" + date + ", adress=" + adress + ", amount=" + amount + '}';
-    }
-
-    public Invoice(String customer, String datecustomer, int date, String adress, int amount) {
-        this.customer = customer;
-        this.datecustomer = datecustomer;
-        this.date = date;
-        this.adress = adress;
-        this.amount = amount;
-    }
-
-    public void setCustomer(String customer) {
-        this.customer = customer;
-    }
-
-    public void setDatecustomer(String datecustomer) {
-        this.datecustomer = datecustomer;
-    }
-
-    public void setDate(int date) {
-        this.date = date;
-    }
-
-    public void setAdress(String adress) {
-        this.adress = adress;
-    }
-
-    public void setAmount(int amount) {
-        this.amount = amount;
-    }
-    private String customer; 
-    private String datecustomer;
-    private int date;
-    private String adress;
-    private  int amount;
-        
-    //metodo
+public class Invoice extends Employee{
     
+    private String ruc;
 
+    public Invoice(String ruc) {
+        this.ruc = ruc;
+    }
+
+    /**
+     *
+     * @param ruc
+     * @param name
+     * @param Last_Name
+     * @param id
+     * @param hours_worked
+     * @param hourly_pay
+     */
+    public Invoice (){
+        
+    }
+    public Invoice(String ruc, String name, String Last_Name, String id, int hours_worked, int hourly_pay) {
+        super(name, Last_Name, id, hours_worked, hourly_pay);
+        
+     
+        this.ruc = ruc;
+    }
+
+    public String getRuc() {
+        return ruc;
+    }
+
+    public void setRuc(String ruc) {
+        this.ruc = ruc;
+    }
+    
+    
+    
+    
+    @Override
+    public double gross_salary() {
+     return getHours_worked() *  getHourly_pay (); }
+
+    @Override
+    public int overtime() {
+           int h_extra = getHours_worked() - 30;
+        
+        if (getHours_worked() > 30)
+            return  h_extra;
+        else
+            return 0; }
+
+    @Override
+    public double net_salary() {
+          return gross_salary() + overtime();
+ 
+    
+    }
+    
+    @Override
+    public String print (){
+        return "Last_name"+
+                "Employee Invoice" + "\n" +
+                "Name: " + getName()+ "\n"+
+                "Last_Name"+ super.getLast_Name()+ "\n"+ 
+                "Id:"+super.getId()+"\n"+
+                "Ruc:" + getRuc() + "\n" +
+                "" + "\n"+
+                
+                "Ivoice"+ "\n"+
+                "gross salary: S/" + this.gross_salary() + "\n "+
+                "net salay: s/" + this.net_salary();
+                
+    }
+
+    
+    
+    
 }

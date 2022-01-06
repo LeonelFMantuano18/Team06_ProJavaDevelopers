@@ -1,64 +1,71 @@
-
 package ec.edu.espe.model;
 
-import java.util.ArrayList;
-
 public abstract class Employee {
-    private String how_long_you_have_working;
-    private String how_long_before_retirement;
-    private ArrayList<Employee> employees;
+    private String name;
+    private String Last_Name;
+    private String id;
     
-    public static void main(String[] args) {
-        Employee employee1 = new Employee(15, 5){};
-    }
-
-    private Employee(int par, int par1) {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
-    }
-    public void Checkthetimeinthecompany (){
+    private int hours_worked;
+    private int hourly_pay;
+    
+    public Employee(){
         
-    }
-    public void Checkremainingtime (){
         
     }
 
-    @Override
-    public String toString() {
-        return "Employee{" + "how_long_you_have_working=" + how_long_you_have_working + ", how_long_before_retirement=" + how_long_before_retirement + '}';
+    public Employee(String name, String Last_Name, String id, int hours_worked, int hourly_pay) {
+        this.name = name;
+        this.Last_Name = Last_Name;
+        this.id = id;
+        this.hours_worked = hours_worked;
+        this.hourly_pay = hourly_pay;
     }
 
-    public Employee(String how_long_you_have_working, String how_long_before_retirement) {
-        this.how_long_you_have_working = how_long_you_have_working;
-        this.how_long_before_retirement = how_long_before_retirement;
+    public String getName() {
+        return name;
     }
 
-    /**
-     * @return the how_long_you_have_working
-     */
-    public String getHow_long_you_have_working() {
-        return how_long_you_have_working;
+    public String getLast_Name() {
+        return Last_Name;
     }
 
-    /**
-     * @param how_long_you_have_working the how_long_you_have_working to set
-     */
-    public void setHow_long_you_have_working(String how_long_you_have_working) {
-        this.how_long_you_have_working = how_long_you_have_working;
+    public String getId() {
+        return id;
     }
 
-    /**
-     * @return the how_long_before_retirement
-     */
-    public String getHow_long_before_retirement() {
-        return how_long_before_retirement;
+    public int getHours_worked() {
+        return hours_worked;
     }
 
-    /**
-     * @param how_long_before_retirement the how_long_before_retirement to set
-     */
-    public void setHow_long_before_retirement(String how_long_before_retirement) {
-        this.how_long_before_retirement = how_long_before_retirement;
+    public int getHourly_pay() {
+        return hourly_pay;
     }
 
-    }
     
+    
+    
+    public abstract double gross_salary ();
+    public abstract int overtime ();
+    public abstract double net_salary ();
+    public abstract String print ();
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public void setLast_Name(String Last_Name) {
+        this.Last_Name = Last_Name;
+    }
+
+    public void setId(String id) {
+        this.id = id;
+    }
+
+    public void setHours_worked(int hours_worked) {
+        this.hours_worked = hours_worked;
+    }
+
+    public void setHourly_pay(int hourly_pay) {
+        this.hourly_pay = hourly_pay;
+    }
+} 
