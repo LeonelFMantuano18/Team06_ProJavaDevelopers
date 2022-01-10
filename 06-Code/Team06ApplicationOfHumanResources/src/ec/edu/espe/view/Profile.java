@@ -123,9 +123,10 @@ public class Profile extends javax.swing.JFrame {
 
     
     private void Btl_enterActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Btl_enterActionPerformed
-        Register profile = new Register();
-        profile.setVisible(true);
-        this.setVisible(false);
+        Register newfrile = new Register();
+        
+        newfrile.setVisible(true);
+        this.dispose();
     }//GEN-LAST:event_Btl_enterActionPerformed
 
     private void Btl_enterMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_Btl_enterMouseClicked
