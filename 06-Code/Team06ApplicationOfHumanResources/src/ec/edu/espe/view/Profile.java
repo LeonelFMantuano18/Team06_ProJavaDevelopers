@@ -5,14 +5,8 @@
 package ec.edu.espe.view;
 
 
-<<<<<<< HEAD
 
-=======
-<<<<<<< HEAD
-=======
->>>>>>> 47c7ddb4568b847e96ce6ea1589a74f2ef679bf5
 import com.mongodb.DB;
->>>>>>> 7624fc7fe02f0a60f27efa7325b95f80d16fe480
 import com.mongodb.client.MongoCollection;
 import javax.swing.JOptionPane;
 import org.bson.Document;
@@ -22,17 +16,8 @@ import org.bson.Document;
  * @author USER
  */
 public class Profile extends javax.swing.JFrame {
-<<<<<<< HEAD
     MongoCollection<Document> Register = new DB().obtenerDB().getCollection("Contact");
-=======
-<<<<<<< HEAD
-    
-    
-=======
-    MongoCollection<Document> Register = new DB().obtenerDB().getCollection("Register");
->>>>>>> 47c7ddb4568b847e96ce6ea1589a74f2ef679bf5
   
->>>>>>> 7624fc7fe02f0a60f27efa7325b95f80d16fe480
     /**
      * Creates new form Company1
      */
