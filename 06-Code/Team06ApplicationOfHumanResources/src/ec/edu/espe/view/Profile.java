@@ -5,7 +5,9 @@
 package ec.edu.espe.view;
 
 
+import com.mongodb.client.MongoCollection;
 import javax.swing.JOptionPane;
+import org.bson.Document;
 
 /**
  *
@@ -13,7 +15,7 @@ import javax.swing.JOptionPane;
  */
 public class Profile extends javax.swing.JFrame {
     
-  
+    
     /**
      * Creates new form Company1
      */

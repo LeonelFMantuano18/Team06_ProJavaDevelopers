@@ -4,6 +4,9 @@
  */
 package ec.edu.espe.model;
 
+import javax.swing.JOptionPane;
+import org.bson.Document;
+
 /**
  *
  * @author andresmaldonado
@@ -74,4 +77,35 @@ public abstract class Employee {
     }
 } 
 
-    
+    /*String sex;
+        if(txtMasculine.isSelected()){
+                sex = "Masculine";
+            }else if (txtFeminine.isSelected()){
+                sex = "Femenine";
+            } else if(txtOthers.isSelected()){
+                sex = "Other";
+            } else {
+                sex = "Ninguna";
+            }
+        try {
+            Document data = new Document();
+            
+            data.put("id", Integer.parseInt(txtId.getText()));
+            data.put("name", txtName.getText());
+            data.put("hobby", txtHobby.getSelectedItem().toString());
+            data.put("cellphone", txtCellPhone.getText());
+            data.put("sex", txtMasculine.getUIClassID());
+            data.put("group", txtGroup.getSelectedItem().toString());
+            data.put("salary", Float.parseFloat(txtSalary.getText()));
+            data.put("birthdate", txtBirthdate.getDate().toString());
+            data.put("comments", txtComments.getText());
+
+            Contact.insertOne(data);
+            
+            JOptionPane.showMessageDialog(this, "EXITO");
+           
+        } catch(Exception err){
+            JOptionPane.showMessageDialog(this, "ERROR: "+err.getMessage());
+        }
+        
+*/
