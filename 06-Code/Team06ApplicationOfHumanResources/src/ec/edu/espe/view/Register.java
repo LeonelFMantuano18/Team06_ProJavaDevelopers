@@ -4,21 +4,40 @@
  */
 package ec.edu.espe.view;
 
+import com.mongodb.client.MongoCollection;
+import com.mongodb.client.result.UpdateResult;
+import javax.swing.JOptionPane;
+import org.bson.Document;
+import org.bson.types.ObjectId;
+
 /**
  *
  * @author USER
  */
-public class Register extends javax.swing.JFrame {
-
+public class Register extends javax.swing.JDialog {
+    Document filter;
+    MongoCollection<Document> Register;
     /**
      * Creates new form Register
      */
-    public Register() {
+    public Register(java.awt.Frame parent, boolean modal, MongoCollection<Document> Register, String id) {
+        super(parent, modal);
         initComponents();
         this.setTitle("User register");
         this.setLocation(100, 100);
+        
+        filter = new Document("id",new ObjectId(id));
+        this.Register = Register;
+ 
+        Document answer = Register.find(filter).first();
+        /*
+        txtname.setText(answer.getString("Name"));
+        txtid.setText(answer.getString("Id"));
+        txtgender.setText(answer.getString("Gender"));
+        txtage.setText(answer.getString("Age"));*/
+        this.setLocationRelativeTo(null);
+        
     }
-
     /**
      * This method is called from within the constructor to initialize the form.
      * WARNING: Do NOT modify this code. The content of this method is always
@@ -199,19 +218,19 @@ public class Register extends javax.swing.JFrame {
     }//GEN-LAST:event_txtageKeyTyped
 
     private void Btn_AddActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Btn_AddActionPerformed
-        
-        String cadena2,cadena3,cadena4,cadena5;
-        
-        cadena2 = txtname.getText();
-        cadena3 = txtid.getText();
-        cadena4 = txtgender.getText();
-        cadena5 = txtage.getText();
-                   
-     if ((txtname.getText().equals("")) || (txtid.getText().equals("")) || (txtgender.getText().equals("")) || txtage.getText().equals("")){
-         javax.swing.JOptionPane.showMessageDialog(this,"You must fill in all fields \n","WARNING!",javax.swing.JOptionPane.INFORMATION_MESSAGE);
-         txtname.requestFocus();
-     }
-     
+        Document dataUpload= new Document();
+         
+            dataUpload.put("Name", txtname.getText());
+            dataUpload.put("Id", txtid.getText());
+            dataUpload.put("Gender", txtgender.getText());
+            dataUpload.put("Age", txtage.getText());
+            
+        UpdateResult answer = Register.updateOne(filter, new Document("$set",dataUpload));
+        if(answer.getMatchedCount()==1){
+            JOptionPane.showMessageDialog(this, "Se subio correctamente");
+        } else {
+            JOptionPane.showMessageDialog(this, "Error");
+        }
     }//GEN-LAST:event_Btn_AddActionPerformed
 
     private void Btn_nextActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Btn_nextActionPerformed
