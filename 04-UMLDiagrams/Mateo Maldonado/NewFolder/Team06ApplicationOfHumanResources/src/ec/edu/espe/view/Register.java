@@ -61,6 +61,8 @@ public class Register extends javax.swing.JDialog {
         Btn_next = new javax.swing.JButton();
         jLabel5 = new javax.swing.JLabel();
 
+        setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+
         jLabel1.setText("Name");
 
         jLabel2.setText("Id");
@@ -101,11 +103,6 @@ public class Register extends javax.swing.JDialog {
             }
         });
 
-        txtid.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                txtidActionPerformed(evt);
-            }
-        });
         txtid.addKeyListener(new java.awt.event.KeyAdapter() {
             public void keyTyped(java.awt.event.KeyEvent evt) {
                 txtidKeyTyped(evt);
@@ -243,10 +240,6 @@ public class Register extends javax.swing.JDialog {
         this.setVisible(false);
     }//GEN-LAST:event_Btn_nextActionPerformed
 
-    private void txtidActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtidActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_txtidActionPerformed
-
     /**
      * @param args the command line arguments
      */
@@ -277,7 +270,7 @@ public class Register extends javax.swing.JDialog {
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
-                //new Register().setVisible(true);
+                new Register().setVisible(true);
             }
         });
     }
