@@ -277,7 +277,8 @@ public class Register extends javax.swing.JDialog {
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
-                //new Register().setVisible(true);
+                String id = .Object(id);
+                new Register(this,true, Register, id).setVisible(true);
             }
         });
     }
