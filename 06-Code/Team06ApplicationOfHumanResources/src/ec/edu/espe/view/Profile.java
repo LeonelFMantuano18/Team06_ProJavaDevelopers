@@ -16,11 +16,11 @@ import org.bson.Document;
  * @author USER
  */
 public class Profile extends javax.swing.JFrame {
-    MongoCollection<Document> Register = new DB().obtenerDB().getCollection("Contact");
-  
+    MongoCollection<Document> Register;
     /**
      * Creates new form Company1
      */
+    MongoCollection<Document> Contact;
     public Profile() {
        
         
