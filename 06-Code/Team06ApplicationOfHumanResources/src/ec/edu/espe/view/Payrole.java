@@ -41,7 +41,7 @@ public class Payrole extends javax.swing.JFrame {
         txt_gross = new javax.swing.JTextField();
         txt_bonus = new javax.swing.JTextField();
         txt_discount = new javax.swing.JTextField();
-        Btn_next = new javax.swing.JButton();
+        BtnReturn = new javax.swing.JButton();
         Btn_new = new javax.swing.JButton();
         Btn_calculate = new javax.swing.JButton();
 
@@ -63,7 +63,12 @@ public class Payrole extends javax.swing.JFrame {
 
         jLabel8.setText("Net salary");
 
-        Btn_next.setText("Next");
+        BtnReturn.setText("Return");
+        BtnReturn.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                BtnReturnActionPerformed(evt);
+            }
+        });
 
         Btn_new.setText("New");
         Btn_new.addActionListener(new java.awt.event.ActionListener() {
@@ -122,7 +127,7 @@ public class Payrole extends javax.swing.JFrame {
                 .addGap(18, 18, 18)
                 .addComponent(Btn_new)
                 .addGap(18, 18, 18)
-                .addComponent(Btn_next)
+                .addComponent(BtnReturn)
                 .addContainerGap())
         );
         layout.setVerticalGroup(
@@ -159,7 +164,7 @@ public class Payrole extends javax.swing.JFrame {
                     .addComponent(txt_salary, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 62, Short.MAX_VALUE)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(Btn_next)
+                    .addComponent(BtnReturn)
                     .addComponent(Btn_new)
                     .addComponent(Btn_calculate))
                 .addContainerGap())
@@ -199,6 +204,10 @@ public class Payrole extends javax.swing.JFrame {
         txt_salary.setText("");
     }//GEN-LAST:event_Btn_newActionPerformed
 
+    private void BtnReturnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BtnReturnActionPerformed
+       dispose();
+    }//GEN-LAST:event_BtnReturnActionPerformed
+
     /**
      * @param args the command line arguments
      */
@@ -236,9 +245,9 @@ public class Payrole extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JButton BtnReturn;
     private javax.swing.JButton Btn_calculate;
     private javax.swing.JButton Btn_new;
-    private javax.swing.JButton Btn_next;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
