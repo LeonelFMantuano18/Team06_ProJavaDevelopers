@@ -5,10 +5,8 @@
 package ec.edu.espe.view;
 
 
-
-
+import com.mongodb.DB;
 import com.mongodb.client.MongoCollection;
-import ec.edu.espe.model.DB;
 import javax.swing.JOptionPane;
 import org.bson.Document;
 
@@ -18,6 +16,7 @@ import org.bson.Document;
  */
 public class Profile extends javax.swing.JFrame {
     MongoCollection<Document> Register = new DB().obtenerDB().getCollection("Register");
+
     /**
      * Creates new form Company1
      */
@@ -127,22 +126,10 @@ public class Profile extends javax.swing.JFrame {
 
     
     private void Btl_enterActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Btl_enterActionPerformed
-<<<<<<< HEAD
-        String id = Btl_enter.getActionCommand();
-        Register profile = new Register(this,true, Register, id);
-        profile.setVisible(true);
-        this.setVisible(false);
-=======
-<<<<<<< HEAD
-        Register newfile = new Register();
-=======
-        String idUpload = Btl_enter.getActionCommand();
-        Register newfrile = new Register(this,true, Register, idUpload);
->>>>>>> bee04d53539b487164d0d81047204e3bf2506bd3
+        Register newfrile = new Register();
         
-        newfile.setVisible(true);
+        newfrile.setVisible(true);
         this.dispose();
->>>>>>> 9672d2cec0bf5edfee3196693188f29c3d4ef282
     }//GEN-LAST:event_Btl_enterActionPerformed
 
     private void Btl_enterMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_Btl_enterMouseClicked
