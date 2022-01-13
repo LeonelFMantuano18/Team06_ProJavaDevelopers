@@ -273,7 +273,7 @@ public class Register extends javax.swing.JFrame {
             data.put("Age", txtAge.getText());
             Register.insertOne(data);
             
-            JOptionPane.showMessageDialog(this, "EXITO01");
+            JOptionPane.showMessageDialog(this, "CORRECT");
            
         } catch(Exception err){
             JOptionPane.showMessageDialog(this, "ERROR: "+err.getMessage());
