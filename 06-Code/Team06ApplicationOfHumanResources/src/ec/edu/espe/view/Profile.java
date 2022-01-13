@@ -1,22 +1,17 @@
-
+/*
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+ * Click nbfs://nbhost/SystemFileSystem/Templates/GUIForms/JFrame.java to edit this template
+ */
 package ec.edu.espe.view;
 
 
 import javax.swing.JOptionPane;
-import static javax.swing.text.html.HTML.Tag.HEAD;
-import org.bson.Document;
 
 /**
  *
  * @author USER
  */
 public class Profile extends javax.swing.JFrame {
-<<<<<<< HEAD:06-Code/Team06ApplicationOfHumanResources/src/ec/edu/espe/view/Profile.java
-<<<<<<< HEAD
-    MongoCollection<Document> Register;
-
-=======
->>>>>>> b80b270c74c118034c54ba33a49ad090e81c3293:06-Code/Team/src/ec/edu/espe/view/Profile.java
     
   
     /**
@@ -132,17 +127,6 @@ public class Profile extends javax.swing.JFrame {
 
     
     private void Btl_enterActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Btl_enterActionPerformed
-<<<<<<< HEAD:06-Code/Team06ApplicationOfHumanResources/src/ec/edu/espe/view/Profile.java
-//<<<<<<< HEAD
-//<<<<<<< HEAD
-        Register newfile = new Register();
-//=======
-        String idUpload = Btl_enter.getActionCommand();
-        Register newfrile = new Register(this,true, Register, idUpload);
-//>>>>>>> bee04d53539b487164d0d81047204e3bf2506bd3
-
-=======
->>>>>>> b80b270c74c118034c54ba33a49ad090e81c3293:06-Code/Team/src/ec/edu/espe/view/Profile.java
         Register newfrile = new Register();
         
         newfrile.setVisible(true);
