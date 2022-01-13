@@ -12,16 +12,11 @@ import javax.swing.JOptionPane;
  * @author USER
  */
 public class Profile extends javax.swing.JFrame {
-<<<<<<< HEAD
-    MongoCollection<Document> Register;
-=======
     
   
->>>>>>> 1e8e9e012502c55d95adbb53bdc39b7c9282fea9
     /**
      * Creates new form Company1
      */
-    MongoCollection<Document> Contact;
     public Profile() {
        
         
@@ -132,16 +127,7 @@ public class Profile extends javax.swing.JFrame {
 
     
     private void Btl_enterActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Btl_enterActionPerformed
-<<<<<<< HEAD
-//<<<<<<< HEAD
-        Register newfile = new Register();
-//=======
-        String idUpload = Btl_enter.getActionCommand();
-        Register newfrile = new Register(this,true, Register, idUpload);
-//>>>>>>> bee04d53539b487164d0d81047204e3bf2506bd3
-=======
         Register newfrile = new Register();
->>>>>>> 7d2fff1caceacd8c52abac40b60c0c6ac02a1be6
         
         newfrile.setVisible(true);
         this.dispose();

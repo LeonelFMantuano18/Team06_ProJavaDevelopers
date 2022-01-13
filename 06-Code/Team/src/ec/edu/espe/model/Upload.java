@@ -18,14 +18,14 @@ public class Upload extends javax.swing.JDialog {
     /**
      * Creates new form Upload
      */
-    public Upload(java.awt.Frame parent, boolean modal, MongoCollection<Document> Register, String id) {
+    public Upload(java.awt.Frame parent, boolean modal, MongoCollection<Document> Contact, String id) {
         super(parent, modal);
         initComponents();
         
         filter = new Document("_id",new ObjectId(id));
-        this.Register = Register;
+        this.Register = Contact;
         
-        Document answer = Register.find(filter).first();
+        Document answer = Contact.find(filter).first();
         /*
         txtId.setText(answer.getInteger("id").toString());
         txtName.setText(answer.getString("name"));
