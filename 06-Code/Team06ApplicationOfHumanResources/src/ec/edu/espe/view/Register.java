@@ -7,8 +7,6 @@ import com.mongodb.client.result.DeleteResult;
 import ec.edu.espe.model.DB;
 import ec.edu.espe.model.Upload;
 import java.util.ArrayList;
-import java.util.Calendar;
-import java.util.GregorianCalendar;
 import javax.swing.JOptionPane;
 import javax.swing.table.DefaultTableModel;
 import org.bson.Document;
@@ -22,7 +20,6 @@ import org.bson.types.ObjectId;
  */
 public class Register extends javax.swing.JFrame {
     
-    Calendar fecha_actual = new GregorianCalendar();
     MongoCollection<Document> Register = new DB().obtenerDB().getCollection("Contact");
     DefaultTableModel tabla = new DefaultTableModel(){
         @Override
@@ -303,16 +300,16 @@ public class Register extends javax.swing.JFrame {
     private void btnRemoveActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnRemoveActionPerformed
         int renglon = tblContacts.getSelectedRow();
         if(renglon == -1){
-            JOptionPane.showMessageDialog(this, "Selecciona el ID a borrar");
+            JOptionPane.showMessageDialog(this, "Select the ID to delete");
             return;
         }
         String idRemove = tblContacts.getValueAt(renglon, 0).toString();
-        int respuesta = JOptionPane.showConfirmDialog(this, "¿Estas seguro de eliminar este ID?"+ idRemove);
+        int respuesta = JOptionPane.showConfirmDialog(this, "¿Are you sure you want to delete this ID?"+ idRemove);
         if(respuesta == JOptionPane.OK_OPTION){
             boolean answerDelete = Delete(idRemove);
             if(answerDelete==true){
                 mostrar();
-                JOptionPane.showMessageDialog(this, "El proceso se realizo correctamente");
+                JOptionPane.showMessageDialog(this, "The process was successful");
             }else{
                 JOptionPane.showMessageDialog(this, "Error");
 
@@ -324,11 +321,11 @@ public class Register extends javax.swing.JFrame {
     private void btnUploadActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnUploadActionPerformed
         int renglon = tblContacts.getSelectedRow();
         if(renglon == -1){
-            JOptionPane.showMessageDialog(this, "Por favor selecciona el Id a subir");
+            JOptionPane.showMessageDialog(this, "Please select the Id to upload");
             return;
         }
         String idUpload = tblContacts.getValueAt(renglon, 0).toString();
-        int answer = JOptionPane.showConfirmDialog(this, "¿Estas seguro de subir este ID?"+ idUpload);
+        int answer = JOptionPane.showConfirmDialog(this, "¿Are you sure about uploading this ID?"+ idUpload);
         if(answer == JOptionPane.OK_OPTION){
             Upload upload = new Upload(this,true, Register, idUpload);
             upload.setVisible(true);
@@ -374,6 +371,8 @@ public class Register extends javax.swing.JFrame {
         } catch (javax.swing.UnsupportedLookAndFeelException ex) {
             java.util.logging.Logger.getLogger(Register.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
+        //</editor-fold>
+        //</editor-fold>
         //</editor-fold>
         //</editor-fold>
 

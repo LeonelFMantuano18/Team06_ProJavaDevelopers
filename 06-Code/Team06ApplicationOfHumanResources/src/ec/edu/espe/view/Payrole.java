@@ -6,7 +6,7 @@ package ec.edu.espe.view;
 
 /**
  *
- * @author USER
+ * @author Team06
  */
 public class Payrole extends javax.swing.JFrame {
 

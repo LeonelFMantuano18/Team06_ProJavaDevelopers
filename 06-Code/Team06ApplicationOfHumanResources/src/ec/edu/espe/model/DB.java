@@ -8,7 +8,7 @@ import com.mongodb.client.MongoDatabase;
 
 /**
  *
- * @author LM
+ * @author Team06
  */
 public class DB {
     
