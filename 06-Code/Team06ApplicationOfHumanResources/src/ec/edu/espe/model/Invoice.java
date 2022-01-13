@@ -1,3 +1,9 @@
+
+
+
+
+// autor Richar Maisincho
+
 package ec.edu.espe.model;
 
 public class Invoice extends Employee{
