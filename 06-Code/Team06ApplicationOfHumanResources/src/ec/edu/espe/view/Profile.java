@@ -132,7 +132,16 @@ public class Profile extends javax.swing.JFrame {
 
     
     private void Btl_enterActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Btl_enterActionPerformed
+<<<<<<< HEAD
+//<<<<<<< HEAD
+        Register newfile = new Register();
+//=======
+        String idUpload = Btl_enter.getActionCommand();
+        Register newfrile = new Register(this,true, Register, idUpload);
+//>>>>>>> bee04d53539b487164d0d81047204e3bf2506bd3
+=======
         Register newfrile = new Register();
+>>>>>>> 7d2fff1caceacd8c52abac40b60c0c6ac02a1be6
         
         newfrile.setVisible(true);
         this.dispose();
