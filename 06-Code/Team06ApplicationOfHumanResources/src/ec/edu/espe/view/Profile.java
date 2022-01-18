@@ -5,8 +5,7 @@
 package ec.edu.espe.view;
 
 import javax.swing.JOptionPane;
-
-
+ // buttons OK
 /**
  *
  * @author Team06
