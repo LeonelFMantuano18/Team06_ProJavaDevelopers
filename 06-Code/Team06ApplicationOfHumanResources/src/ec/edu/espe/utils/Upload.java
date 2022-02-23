@@ -1,5 +1,5 @@
 
-package ec.edu.espe.model;
+package ec.edu.espe.utils;
 
 import com.mongodb.client.MongoCollection;
 import com.mongodb.client.result.UpdateResult;
