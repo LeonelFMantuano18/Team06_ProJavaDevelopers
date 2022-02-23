@@ -18,16 +18,3 @@
 *.zip
 *.tar.gz
 *.rar
-
-# virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
-hs_err_pid*
-/06-Code/Application of human resources/nbproject/private/
-/06-Code/Application of human resources/build/
-/06-Code/Application of human resources/target/
-/04-UMLDiagrams/Mateo Maldonado/NewFolder/VersionOfClasses/nbproject/private/
-/06-Code/mavenproject2/target/
-/06-Code/Team06ApplicationOfHumanResources/build/
-/06-Code/Team06ApplicationOfHumanResources/nbproject/private/
-/06-Code/Team06ApplicationOfHumanResources/dist/
-/06-Code/Team/dist/
-/06-Code/Team/nbproject/private/
