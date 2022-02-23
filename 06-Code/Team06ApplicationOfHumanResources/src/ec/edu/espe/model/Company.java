@@ -1,8 +1,7 @@
 package ec.edu.espe.model;
 
 public class Company extends Worker{
-    //  this class does not contain the same attributes and methods as the UML diagram
-
+    
         
     private int hoursOfAttention;
     private int moneyEarned;

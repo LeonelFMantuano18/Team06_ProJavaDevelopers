@@ -32,6 +32,7 @@ public class Register extends javax.swing.JFrame {
     public Register() {
         
         initComponents();
+        tabla.addColumn("Id Cloud");tabla.addColumn("Id Cloud");
         tabla.addColumn("Name");tabla.addColumn("Name");
         tabla.addColumn("Id");tabla.addColumn("Id");
         tabla.addColumn("Gender");tabla.addColumn("Gender");
@@ -108,7 +109,7 @@ public class Register extends javax.swing.JFrame {
 
             },
             new String [] {
-
+                "Title 1", "Title 2", "Title 3", "Title 4", "Title 5"
             }
         ));
         jScrollPane2.setViewportView(tblContacts);
