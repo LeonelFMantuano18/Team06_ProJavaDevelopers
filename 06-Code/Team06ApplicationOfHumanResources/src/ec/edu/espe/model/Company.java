@@ -1,9 +1,10 @@
 package ec.edu.espe.model;
-
+/**
+ *
+ * @author Team06
+ */
 public class Company extends Worker{
-    //  this class does not contain the same attributes and methods as the UML diagram
-
-        
+            
     private int hoursOfAttention;
     private int moneyEarned;
     private String location;
@@ -27,44 +28,26 @@ public class Company extends Worker{
         return "Company{" + "hoursOfAttention=" + hoursOfAttention + ", moneyEarned=" + moneyEarned + ", location=" + location + '}';
     }
     
-    /**
-     * @return the hoursOfAttention
-     */
     public int getHoursOfAttention() {
         return hoursOfAttention;
     }
 
-    /**
-     * @param hoursOfAttention the hoursOfAttention to set
-     */
     public void setHoursOfAttention(int hoursOfAttention) {
         this.hoursOfAttention = hoursOfAttention;
     }
 
-    /**
-     * @return the moneyEarned
-     */
     public int getMoneyEarned() {
         return moneyEarned;
     }
 
-    /**
-     * @param moneyEarned the moneyEarned to set
-     */
     public void setMoneyEarned(int moneyEarned) {
         this.moneyEarned = moneyEarned;
     }
 
-    /**
-     * @return the location
-     */
     public String getLocation() {
         return location;
     }
 
-    /**
-     * @param location the location to set
-     */
     public void setLocation(String location) {
         this.location = location;
     }
