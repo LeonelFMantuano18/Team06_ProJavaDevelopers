@@ -32,19 +32,15 @@ public class Register extends javax.swing.JFrame {
     public Register() {
         
         initComponents();
-<<<<<<< HEAD
-        tabla.addColumn("Id Cloud");tabla.addColumn("Id Cloud");
-        tabla.addColumn("Name");tabla.addColumn("Name");
-        tabla.addColumn("Id");tabla.addColumn("Id");
-        tabla.addColumn("Gender");tabla.addColumn("Gender");
-        tabla.addColumn("Age");tabla.addColumn("Age");
-=======
-        tabla.addColumn("_id");
+
+      
+
+        tabla.addColumn("Id Cloud");
         tabla.addColumn("Name");
         tabla.addColumn("Id");
         tabla.addColumn("Gender");
         tabla.addColumn("Age");
->>>>>>> 7396ef07f5d467b955db50e83d65242c7aee52f1
+
         tblContacts.setModel(tabla);
         mostrar();
         
