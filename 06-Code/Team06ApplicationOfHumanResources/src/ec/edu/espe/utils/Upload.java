@@ -12,7 +12,7 @@ import org.bson.types.ObjectId;
  * @author Team06
  */
 public class Upload extends javax.swing.JDialog {
-
+ // buttons OK
     Document filter;
     MongoCollection<Document> Register;
     /**

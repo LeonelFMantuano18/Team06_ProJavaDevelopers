@@ -12,7 +12,7 @@ import javax.swing.table.DefaultTableModel;
 import org.bson.Document;
 import org.bson.types.ObjectId;
 
-
+ // buttons OK
 
 /**
  *
@@ -20,7 +20,7 @@ import org.bson.types.ObjectId;
  */
 public class Register extends javax.swing.JFrame {
     
-    MongoCollection<Document> Register = new DB().obtenerDB().getCollection("Contact");
+    MongoCollection<Document> Register = new DB().obtenerDB().getCollection("Register");
     DefaultTableModel tabla = new DefaultTableModel(){
         @Override
         public boolean isCellEditable(int row, int column) {
@@ -53,7 +53,7 @@ public class Register extends javax.swing.JFrame {
         txtSex = new javax.swing.ButtonGroup();
         btnPayRole = new javax.swing.JButton();
         btnExit = new javax.swing.JToggleButton();
-        btnListContacts = new javax.swing.JButton();
+        btnListRegister = new javax.swing.JButton();
         btnUpload = new javax.swing.JToggleButton();
         jScrollPane2 = new javax.swing.JScrollPane();
         tblContacts = new javax.swing.JTable();
@@ -89,10 +89,10 @@ public class Register extends javax.swing.JFrame {
             }
         });
 
-        btnListContacts.setText("List Contacts");
-        btnListContacts.addActionListener(new java.awt.event.ActionListener() {
+        btnListRegister.setText("List Register");
+        btnListRegister.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btnListContactsActionPerformed(evt);
+                btnListRegisterActionPerformed(evt);
             }
         });
 
@@ -231,7 +231,7 @@ public class Register extends javax.swing.JFrame {
                         .addGap(49, 49, 49)
                         .addComponent(btnRemove)
                         .addGap(38, 38, 38)
-                        .addComponent(btnListContacts)
+                        .addComponent(btnListRegister)
                         .addGap(40, 40, 40)
                         .addComponent(btnUpload, javax.swing.GroupLayout.PREFERRED_SIZE, 163, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(49, 49, 49)
@@ -249,7 +249,7 @@ public class Register extends javax.swing.JFrame {
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(btnExit)
                     .addComponent(btnPayRole)
-                    .addComponent(btnListContacts)
+                    .addComponent(btnListRegister)
                     .addComponent(btnUpload)
                     .addComponent(btnRemove)
                     .addComponent(btnAdd))
@@ -282,11 +282,11 @@ public class Register extends javax.swing.JFrame {
             
     }//GEN-LAST:event_btnAddActionPerformed
 
-    private void btnListContactsActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnListContactsActionPerformed
+    private void btnListRegisterActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnListRegisterActionPerformed
                
         mostrar();
         
-    }//GEN-LAST:event_btnListContactsActionPerformed
+    }//GEN-LAST:event_btnListRegisterActionPerformed
 
     private void btnExitActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnExitActionPerformed
         System.exit(0);
@@ -392,7 +392,7 @@ public class Register extends javax.swing.JFrame {
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton btnAdd;
     private javax.swing.JToggleButton btnExit;
-    private javax.swing.JButton btnListContacts;
+    private javax.swing.JButton btnListRegister;
     private javax.swing.JButton btnPayRole;
     private javax.swing.JButton btnRemove;
     private javax.swing.JToggleButton btnUpload;

@@ -1,7 +1,7 @@
 package ec.edu.espe.model;
 
 public class Invoice extends Employee{
-    
+    //  this class does not contain the same attributes and methods as the UML diagram
     private String ruc;
 
     public Invoice(String ruc) {

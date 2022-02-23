@@ -1,8 +1,8 @@
 package ec.edu.espe.model;
 
 public class Payrole extends Employee{
-    
-    //atributos
+    //  this class does not contain the same attributes and methods as the UML diagram
+
     
     int number_of_children;
     

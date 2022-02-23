@@ -1,6 +1,9 @@
 package ec.edu.espe.model;
 
 public abstract class Employee {
+    
+    //  this class does not contain the same attributes and methods as the UML diagram
+    
     private String name;
     private String lastName;
     private String id;

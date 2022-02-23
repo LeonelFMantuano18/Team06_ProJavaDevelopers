@@ -9,7 +9,7 @@ package ec.edu.espe.view;
  * @author Team06
  */
 public class Payrole extends javax.swing.JFrame {
-
+ // buttons OK
     /**
      * Creates new form Menu
      */
