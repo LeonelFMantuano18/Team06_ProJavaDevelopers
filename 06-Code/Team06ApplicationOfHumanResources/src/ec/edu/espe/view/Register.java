@@ -32,11 +32,15 @@ public class Register extends javax.swing.JFrame {
     public Register() {
         
         initComponents();
-        tabla.addColumn("_id");
+
+      
+
+        tabla.addColumn("Id Cloud");
         tabla.addColumn("Name");
         tabla.addColumn("Id");
         tabla.addColumn("Gender");
         tabla.addColumn("Age");
+
         tblContacts.setModel(tabla);
         mostrar();
         
@@ -72,7 +76,62 @@ public class Register extends javax.swing.JFrame {
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setBackground(new java.awt.Color(51, 102, 255));
 
+<<<<<<< HEAD
         jPanel1.setBackground(new java.awt.Color(0, 153, 153));
+=======
+        btnPayRole.setText("PayRole");
+        btnPayRole.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnPayRoleActionPerformed(evt);
+            }
+        });
+
+        btnExit.setText("Exit");
+        btnExit.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnExitActionPerformed(evt);
+            }
+        });
+
+        btnListRegister.setText("List Register");
+        btnListRegister.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnListRegisterActionPerformed(evt);
+            }
+        });
+
+        btnUpload.setText("Upload");
+        btnUpload.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnUploadActionPerformed(evt);
+            }
+        });
+
+        tblContacts.setModel(new javax.swing.table.DefaultTableModel(
+            new Object [][] {
+
+            },
+            new String [] {
+                "Title 1", "Title 2", "Title 3", "Title 4", "Title 5"
+            }
+        ));
+        jScrollPane2.setViewportView(tblContacts);
+
+        btnRemove.setText("Remove");
+        btnRemove.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnRemoveActionPerformed(evt);
+            }
+        });
+
+        btnAdd.setText("Add");
+        btnAdd.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnAddActionPerformed(evt);
+            }
+        });
+
+>>>>>>> 1593ea71ce84936e1e752d3d6e1e3286b51f0756
         jPanel1.setForeground(new java.awt.Color(255, 255, 153));
 
         jLabel1.setFont(new java.awt.Font("Tahoma", 3, 18)); // NOI18N
