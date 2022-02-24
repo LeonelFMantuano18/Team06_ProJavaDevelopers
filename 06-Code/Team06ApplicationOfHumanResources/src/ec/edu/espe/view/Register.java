@@ -1,4 +1,3 @@
-
 package ec.edu.espe.view;
         
 import com.mongodb.client.MongoCollection;
@@ -12,7 +11,7 @@ import javax.swing.table.DefaultTableModel;
 import org.bson.Document;
 import org.bson.types.ObjectId;
 
- 
+
 
 /**
  *
@@ -20,7 +19,7 @@ import org.bson.types.ObjectId;
  */
 public class Register extends javax.swing.JFrame {
     
-    MongoCollection<Document> Register = new DB().obtenerDB().getCollection("Register");
+    MongoCollection<Document> Register = new DB().obtenerDB().getCollection("Contact");
     DefaultTableModel tabla = new DefaultTableModel(){
         @Override
         public boolean isCellEditable(int row, int column) {
@@ -32,21 +31,15 @@ public class Register extends javax.swing.JFrame {
     public Register() {
         
         initComponents();
-
-      
-
-        tabla.addColumn("Id Cloud");
-        tabla.addColumn("Name");
-        tabla.addColumn("Id");
-        tabla.addColumn("Gender");
-        tabla.addColumn("Age");
-
+        tabla.addColumn("Name");tabla.addColumn("Name");
+        tabla.addColumn("Id");tabla.addColumn("Id");
+        tabla.addColumn("Gender");tabla.addColumn("Gender");
+        tabla.addColumn("Age");tabla.addColumn("Age");
         tblContacts.setModel(tabla);
         mostrar();
         
     }
 
-  
     @SuppressWarnings("unchecked")
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
@@ -64,74 +57,19 @@ public class Register extends javax.swing.JFrame {
         txtGender = new javax.swing.JTextField();
         txtAge = new javax.swing.JTextField();
         jLabel6 = new javax.swing.JLabel();
-        btnExit = new javax.swing.JToggleButton();
-        btnPayRole = new javax.swing.JButton();
-        btnUpload = new javax.swing.JToggleButton();
-        btnListRegister = new javax.swing.JButton();
-        btnRemove = new javax.swing.JButton();
-        btnAdd = new javax.swing.JButton();
         jScrollPane2 = new javax.swing.JScrollPane();
         tblContacts = new javax.swing.JTable();
+        btnPayRole = new javax.swing.JButton();
+        btnListContacts = new javax.swing.JButton();
+        btnRemove = new javax.swing.JButton();
+        btnAdd = new javax.swing.JButton();
+        btnUpload = new javax.swing.JButton();
+        btnExit = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setBackground(new java.awt.Color(51, 102, 255));
 
-<<<<<<< HEAD
         jPanel1.setBackground(new java.awt.Color(0, 153, 153));
-=======
-        btnPayRole.setText("PayRole");
-        btnPayRole.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btnPayRoleActionPerformed(evt);
-            }
-        });
-
-        btnExit.setText("Exit");
-        btnExit.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btnExitActionPerformed(evt);
-            }
-        });
-
-        btnListRegister.setText("List Register");
-        btnListRegister.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btnListRegisterActionPerformed(evt);
-            }
-        });
-
-        btnUpload.setText("Upload");
-        btnUpload.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btnUploadActionPerformed(evt);
-            }
-        });
-
-        tblContacts.setModel(new javax.swing.table.DefaultTableModel(
-            new Object [][] {
-
-            },
-            new String [] {
-                "Title 1", "Title 2", "Title 3", "Title 4", "Title 5"
-            }
-        ));
-        jScrollPane2.setViewportView(tblContacts);
-
-        btnRemove.setText("Remove");
-        btnRemove.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btnRemoveActionPerformed(evt);
-            }
-        });
-
-        btnAdd.setText("Add");
-        btnAdd.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btnAddActionPerformed(evt);
-            }
-        });
-
->>>>>>> 1593ea71ce84936e1e752d3d6e1e3286b51f0756
         jPanel1.setForeground(new java.awt.Color(255, 255, 153));
 
         jLabel1.setFont(new java.awt.Font("Tahoma", 3, 18)); // NOI18N
@@ -194,13 +132,15 @@ public class Register extends javax.swing.JFrame {
 
         jLabel6.setIcon(new javax.swing.ImageIcon(getClass().getResource("/ec/edu/espe/image/Register.png"))); // NOI18N
 
-        btnExit.setFont(new java.awt.Font("Tahoma", 3, 12)); // NOI18N
-        btnExit.setText("Exit");
-        btnExit.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btnExitActionPerformed(evt);
+        tblContacts.setModel(new javax.swing.table.DefaultTableModel(
+            new Object [][] {
+
+            },
+            new String [] {
+
             }
-        });
+        ));
+        jScrollPane2.setViewportView(tblContacts);
 
         btnPayRole.setFont(new java.awt.Font("Tahoma", 3, 12)); // NOI18N
         btnPayRole.setText("PayRole");
@@ -210,19 +150,11 @@ public class Register extends javax.swing.JFrame {
             }
         });
 
-        btnUpload.setFont(new java.awt.Font("Tahoma", 3, 12)); // NOI18N
-        btnUpload.setText("Upload");
-        btnUpload.addActionListener(new java.awt.event.ActionListener() {
+        btnListContacts.setFont(new java.awt.Font("Tahoma", 3, 12)); // NOI18N
+        btnListContacts.setText("List Contacts");
+        btnListContacts.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btnUploadActionPerformed(evt);
-            }
-        });
-
-        btnListRegister.setFont(new java.awt.Font("Tahoma", 3, 12)); // NOI18N
-        btnListRegister.setText("List Register");
-        btnListRegister.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btnListRegisterActionPerformed(evt);
+                btnListContactsActionPerformed(evt);
             }
         });
 
@@ -242,90 +174,99 @@ public class Register extends javax.swing.JFrame {
             }
         });
 
-        tblContacts.setModel(new javax.swing.table.DefaultTableModel(
-            new Object [][] {
-
-            },
-            new String [] {
-
+        btnUpload.setFont(new java.awt.Font("Tahoma", 3, 12)); // NOI18N
+        btnUpload.setText("Upload");
+        btnUpload.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnUploadActionPerformed(evt);
             }
-        ));
-        jScrollPane2.setViewportView(tblContacts);
+        });
+
+        btnExit.setFont(new java.awt.Font("Tahoma", 3, 12)); // NOI18N
+        btnExit.setText("Exit");
+        btnExit.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnExitActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
         jPanel1Layout.setHorizontalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
+                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(btnRemove, javax.swing.GroupLayout.Alignment.TRAILING)
+                            .addComponent(btnPayRole, javax.swing.GroupLayout.Alignment.TRAILING))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(jScrollPane2, javax.swing.GroupLayout.PREFERRED_SIZE, 556, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(18, 18, 18)
+                        .addComponent(btnExit)
+                        .addGap(34, 34, 34))
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
+                        .addComponent(btnAdd)
+                        .addGap(126, 126, 126)
+                        .addComponent(btnListContacts)
+                        .addGap(98, 98, 98)
+                        .addComponent(btnUpload)
+                        .addGap(156, 156, 156))))
             .addGroup(jPanel1Layout.createSequentialGroup()
-                .addGap(29, 29, 29)
+                .addGap(244, 244, 244)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addComponent(btnAdd)
-                        .addGap(32, 32, 32)
-                        .addComponent(btnRemove)
-                        .addGap(46, 46, 46)
-                        .addComponent(btnListRegister)
-                        .addGap(58, 58, 58)
-                        .addComponent(btnPayRole)
+                        .addGap(24, 24, 24)
+                        .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 99, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(18, 18, 18)
+                        .addComponent(jLabel6, javax.swing.GroupLayout.PREFERRED_SIZE, 56, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
-                        .addGap(0, 0, Short.MAX_VALUE)
-                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                            .addComponent(jPanel3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addGroup(jPanel1Layout.createSequentialGroup()
-                                .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 90, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addGap(26, 26, 26)
-                                .addComponent(jLabel6, javax.swing.GroupLayout.PREFERRED_SIZE, 56, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                        .addGap(256, 256, 256))))
-            .addGroup(jPanel1Layout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(jScrollPane2, javax.swing.GroupLayout.PREFERRED_SIZE, 560, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(btnUpload)
-                    .addComponent(btnExit))
-                .addGap(20, 20, 20))
+                    .addGroup(jPanel1Layout.createSequentialGroup()
+                        .addComponent(jPanel3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))))
         );
         jPanel1Layout.setVerticalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                     .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addGap(23, 23, 23)
-                        .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 26, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addContainerGap()
-                        .addComponent(jLabel6, javax.swing.GroupLayout.PREFERRED_SIZE, 53, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 31, Short.MAX_VALUE)
-                .addComponent(jPanel3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(33, 33, 33)
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(btnAdd)
-                    .addComponent(btnRemove)
-                    .addComponent(btnListRegister)
-                    .addComponent(btnPayRole))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                    .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addComponent(btnUpload)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                         .addComponent(btnExit))
-                    .addComponent(jScrollPane2, javax.swing.GroupLayout.PREFERRED_SIZE, 150, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                    .addGroup(jPanel1Layout.createSequentialGroup()
+                        .addGap(24, 24, 24)
+                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(jLabel6, javax.swing.GroupLayout.PREFERRED_SIZE, 53, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 26, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                        .addComponent(jPanel3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(btnListContacts)
+                            .addComponent(btnAdd)
+                            .addComponent(btnUpload))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addGroup(jPanel1Layout.createSequentialGroup()
+                                .addGap(25, 25, 25)
+                                .addComponent(btnPayRole)
+                                .addGap(27, 27, 27)
+                                .addComponent(btnRemove))
+                            .addComponent(jScrollPane2, javax.swing.GroupLayout.PREFERRED_SIZE, 129, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                .addGap(53, 53, 53))
         );
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addContainerGap())
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+            .addComponent(jPanel1, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 431, javax.swing.GroupLayout.PREFERRED_SIZE)
         );
 
         pack();
@@ -352,15 +293,11 @@ public class Register extends javax.swing.JFrame {
             
     }//GEN-LAST:event_btnAddActionPerformed
 
-    private void btnListRegisterActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnListRegisterActionPerformed
+    private void btnListContactsActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnListContactsActionPerformed
                
         mostrar();
         
-    }//GEN-LAST:event_btnListRegisterActionPerformed
-
-    private void btnExitActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnExitActionPerformed
-        System.exit(0);
-    }//GEN-LAST:event_btnExitActionPerformed
+    }//GEN-LAST:event_btnListContactsActionPerformed
 
     private void btnRemoveActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnRemoveActionPerformed
         int renglon = tblContacts.getSelectedRow();
@@ -383,6 +320,12 @@ public class Register extends javax.swing.JFrame {
         
     }//GEN-LAST:event_btnRemoveActionPerformed
 
+    private void btnPayRoleActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnPayRoleActionPerformed
+        Payrole register = new Payrole();
+        register.setVisible(true);
+        this.setVisible(false);
+    }//GEN-LAST:event_btnPayRoleActionPerformed
+
     private void btnUploadActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnUploadActionPerformed
         int renglon = tblContacts.getSelectedRow();
         if(renglon == -1){
@@ -395,14 +338,12 @@ public class Register extends javax.swing.JFrame {
             Upload upload = new Upload(this,true, Register, idUpload);
             upload.setVisible(true);
             mostrar();
-        }
+        }      
     }//GEN-LAST:event_btnUploadActionPerformed
 
-    private void btnPayRoleActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnPayRoleActionPerformed
-        Payrole register = new Payrole();
-        register.setVisible(true);
-        this.setVisible(false);
-    }//GEN-LAST:event_btnPayRoleActionPerformed
+    private void btnExitActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnExitActionPerformed
+        System.exit(0);
+    }//GEN-LAST:event_btnExitActionPerformed
 
     public boolean Delete(String id){
         DeleteResult answer = Register.deleteOne(new Document("_id", new ObjectId(id)));
@@ -438,6 +379,8 @@ public class Register extends javax.swing.JFrame {
         }
         //</editor-fold>
         //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
 
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
@@ -461,11 +404,11 @@ public class Register extends javax.swing.JFrame {
     }
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton btnAdd;
-    private javax.swing.JToggleButton btnExit;
-    private javax.swing.JButton btnListRegister;
+    private javax.swing.JButton btnExit;
+    private javax.swing.JButton btnListContacts;
     private javax.swing.JButton btnPayRole;
     private javax.swing.JButton btnRemove;
-    private javax.swing.JToggleButton btnUpload;
+    private javax.swing.JButton btnUpload;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;

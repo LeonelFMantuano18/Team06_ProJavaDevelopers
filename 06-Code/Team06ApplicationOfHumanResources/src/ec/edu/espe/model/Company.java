@@ -4,12 +4,7 @@ package ec.edu.espe.model;
  * @author Team06
  */
 public class Company extends Worker{
-<<<<<<< HEAD
-            
-=======
-    
-        
->>>>>>> 1593ea71ce84936e1e752d3d6e1e3286b51f0756
+
     private int hoursOfAttention;
     private int moneyEarned;
     private String location;
