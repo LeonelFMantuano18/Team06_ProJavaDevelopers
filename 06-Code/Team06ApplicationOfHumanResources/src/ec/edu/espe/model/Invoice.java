@@ -1,21 +1,29 @@
 package ec.edu.espe.model;
-/**
- *
- * @author Team06
- */
+
 public class Invoice extends Employee{
+    //  this class does not contain the same attributes and methods as the UML diagram
     private String ruc;
 
     public Invoice(String ruc) {
         this.ruc = ruc;
     }
 
+    /**
+     *
+     * @param ruc
+     * @param name
+     * @param Last_Name
+     * @param id
+     * @param hours_worked
+     * @param hourly_pay
+     */
     public Invoice (){
         
     }
     public Invoice(String ruc, String name, String Last_Name, String id, int hours_worked, int hourly_pay) {
         super(name, Last_Name, id, hours_worked, hourly_pay);
         
+     
         this.ruc = ruc;
     }
 
@@ -26,6 +34,9 @@ public class Invoice extends Employee{
     public void setRuc(String ruc) {
         this.ruc = ruc;
     }
+    
+    
+    
     
     @Override
     public double gross_salary() {
@@ -43,6 +54,8 @@ public class Invoice extends Employee{
     @Override
     public double net_salary() {
           return gross_salary() + overtime();
+ 
+    
     }
     
     @Override
@@ -60,5 +73,8 @@ public class Invoice extends Employee{
                 "net salay: s/" + this.net_salary();
                 
     }
- 
+
+    
+    
+    
 }

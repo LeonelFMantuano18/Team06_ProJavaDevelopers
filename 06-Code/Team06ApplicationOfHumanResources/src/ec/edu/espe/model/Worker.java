@@ -1,9 +1,9 @@
+
 package ec.edu.espe.model;
-/**
- *
- * @author Team06
- */
+
+
 public class Worker {
+    //  this class does not contain the same attributes and methods as the UML diagram
     public Worker(String name, String Id, String gender, int age){
         
         this.name=name;

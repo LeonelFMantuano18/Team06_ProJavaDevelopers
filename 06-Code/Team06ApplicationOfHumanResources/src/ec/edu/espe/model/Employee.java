@@ -1,10 +1,9 @@
 package ec.edu.espe.model;
-/**
- *
- * @author Team06
- */
+
 public abstract class Employee {
-        
+    
+    //  this class does not contain the same attributes and methods as the UML diagram
+    
     private String name;
     private String lastName;
     private String id;
@@ -13,7 +12,8 @@ public abstract class Employee {
     private int hourlyPay;
     
     public Employee(){
-       
+        
+        
     }
 
     public Employee(String name, String lastName, String id, int hoursWorked, int hourlyPay) {
@@ -44,6 +44,8 @@ public abstract class Employee {
         return hourlyPay;
     }
 
+    
+    
     public abstract double gross_salary ();
     public abstract int overtime ();
     public abstract double net_salary ();

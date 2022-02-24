@@ -1,10 +1,9 @@
 package ec.edu.espe.model;
-/**
- *
- * @author Team06
- */
-public class Payrole extends Employee{
 
+public class Payrole extends Employee{
+    //  this class does not contain the same attributes and methods as the UML diagram
+
+    
     int number_of_children;
     
     public Payrole (){
@@ -16,6 +15,10 @@ public class Payrole extends Employee{
         
         this.number_of_children = number_of_children;
     }
+
+ 
+    
+    
     
     @Override
     public double gross_salary() {
@@ -29,7 +32,8 @@ public class Payrole extends Employee{
         if (getHours_worked() > 30)
             return  h_extra;
         else
-            return 0;   
+            return 0;
+        
     }
 
     @Override
@@ -38,6 +42,10 @@ public class Payrole extends Employee{
         return gross_salary() + overtime();
     }
 
+    /**
+     *
+     * @return
+     */
     @Override
     public String print (){
         return "Last_name"+
@@ -54,3 +62,4 @@ public class Payrole extends Employee{
     }
 }
 
+//atributos

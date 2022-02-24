@@ -11,7 +11,9 @@ import com.mongodb.client.MongoDatabase;
  * @author Team06
  */
 public class DB {
-   
+    
+
+
 ConnectionString connectionString = new ConnectionString("mongodb+srv://TheTue:Thetrue_18@cluster0.tanum.mongodb.net/myFirstDatabase?retryWrites=true&w=majority");
 MongoClientSettings settings = MongoClientSettings.builder()
         .applyConnectionString(connectionString)
